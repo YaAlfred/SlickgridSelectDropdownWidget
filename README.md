@@ -2,6 +2,7 @@
 Slickgrid select dropdown widget
 
 to use:
+
 1.import it in your project
 
 const SlickgridSelectDropdownWidget = require('./SlickgridSelectDropdownWidget');
