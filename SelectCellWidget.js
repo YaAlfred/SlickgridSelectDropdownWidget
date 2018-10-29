@@ -21,9 +21,9 @@
         divend.setAttribute("name", "format");
         divend.setAttribute("value", "");
         selects = document.createElement("select");//"<select id='Mobility' tabIndex='0' class='editor-select'>"+ option_str +"</select>";
-        divend.setAttribute("id", "Mobility");
-        divend.setAttribute("tabIndex", 0);
-        divend.setAttribute("class", "editor-select");
+        selects.setAttribute("id", "Mobility");
+        selects.setAttribute("tabIndex", 0);
+        selects.setAttribute("class", "editor-select");
         for(let i = 0; i < opt_values.length; i++) {
             let v = opt_values[i];
             let option = document.createElement("option");
@@ -37,7 +37,7 @@
         this._$select = container;
         args.container[0].appendChild(this._$select);
         this._$select.focus();
-        document.getElementById("Mobility").selectedIndex = args.item[args.column.field] ? opt_values.indexOf(args.item[args.column.field]) : 2;
+        document.getElementById("Mobility").selectedIndex = args.item[args.column.field] ? opt_values.indexOf(args.item[args.column.field]) : 0;
     }
      destroy () {
         this._$select.remove();
